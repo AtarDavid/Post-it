@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: rgb(77, 81, 100);
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.note {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    padding: 20px;
+}
+
+
+#note1 {
+    background-color: lightgrey;
+    margin: 200px;
+}
+
+#note2 {
+    background-color: whitesmoke;
+    margin: 160px 360px;
+}
+
+#note1:hover,
+#note2:hover {
+    background-color: beige;
+    box-shadow: 5px 0px 100px darkslategray;
+    z-index: 1;
+}
+
+h6 {
+    color: darkslategrey;
+}
+
+.note>h6::before {
+    content: "";
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    float: left;
+    background-color: darkslategrey;
+    margin: 0.5px 3px 0 0;
+}
+
+p.text {
+    color: slategrey;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 150px;
+    border-top: 0.5px solid slategrey;
+    padding-top: 50px;
+}
+
+p.text::before {
+    content: "";
+    display: block;
+    position: relative;
+    border-radius: 6px 6px 0 0;
+    width: 10px;
+    height: 5px;
+    float: left;
+    background-color: darkslategrey;
+    margin: -55px 3px 0 0;
+}
+
+strong {
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.time>p {
+    font-size: 10px;
+    color: darkslategrey;
+    position: absolute;
+    padding-top: 10px;
+}
+
+#time1 {
+    margin-top: 140px;
+}
+
+#time2 {
+    margin-top: 170px;
+}
+
+#time3 {
+    margin: 170px 0 0 135px;
+}
